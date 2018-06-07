@@ -99,6 +99,9 @@ function getSelectionWord(tabs) {
 function showLink() {
     document.getElementById("link").innerHTML = "<a href=https://translate.google.com/translate?hl=" + langList.value + "&sl=auto&u=" + encodeURIComponent(url) + ">" + browser.i18n.getMessage('showLink') + "</a>";
 }
+function showGoogleTranslateLink() {
+    document.getElementById("googleTranslateLink").innerHTML = '<a href="https://translate.google.com/#auto/' + langList.value + '/' + textarea.value + '">' + browser.i18n.getMessage('showGoogleTranslateLink') + '</a>';
+}
 
 //翻訳元テキストを表示
 function refleshSource() {
@@ -106,6 +109,7 @@ function refleshSource() {
         textarea.innerHTML = sourceWord;
         resize();
         inputText();
+        showGoogleTranslateLink();
     }
 }
 
@@ -117,6 +121,7 @@ textarea.addEventListener("keyup", function (event) {
     //if (event.keyCode == 13) resize();
     resize();
     inputText();
+    showGoogleTranslateLink();
 });
 
 //テキストボックスをリサイズ

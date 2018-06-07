@@ -156,6 +156,7 @@ hr {
     padding: 0px 10px 10px;
 }
 
+
 #link {
     flex-shrink: 0;
 }
@@ -167,6 +168,25 @@ hr {
 }
 
 #link a:hover {
+    text-decoration: underline;
+}
+
+#googleTranslateLink {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 10px;
+}
+
+#googleTranslateLink a {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--highlight);
+}
+
+#googleTranslateLink a:hover {
     text-decoration: underline;
 }
 

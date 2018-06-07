@@ -14,6 +14,9 @@
     "showLink": {
         "message": "Traduzir esta página"
     },
+    "showGoogleTranslateLink": {
+        "message": "Google Tradutor"
+    },
     "targetLangLabel": {
         "message": "Idioma alvo"
     },
